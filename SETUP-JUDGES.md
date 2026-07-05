@@ -7,11 +7,17 @@ source, see [`SETUP.md`](SETUP.md) instead.
 > **TL;DR:** start the memory engine (`docker compose up -d`) → drop your LLM key in two `.env`
 > files → open `Quill.dmg` → grant Accessibility → press **Right-Option (`⌥`)** in any text field.
 
+> **🔒 Before you grant Accessibility — a straight security note.** Quill is **unsigned and
+> open source**. To work, it reads your focused text field and types drafts back (macOS
+> Accessibility). Your captured text stays on your Mac **except** what's sent to the LLM you
+> configure — with a cloud key it goes to that provider; choose the **local Ollama** option for
+> full privacy. The memory engine binds to `127.0.0.1` only; data at rest isn't encrypted yet.
+
 ---
 
 ## What you need
 
-- **macOS 13+** (Apple Silicon recommended)
+- **macOS 13+ on Apple Silicon** (the DMG is arm64; on an Intel Mac, build from source — see [`SETUP.md`](SETUP.md))
 - **[Docker Desktop](https://www.docker.com/products/docker-desktop/)**, running (hosts the
   Cognee memory engine)
 - **One** LLM option:
@@ -26,8 +32,7 @@ source, see [`SETUP.md`](SETUP.md) instead.
 The app installs from a `.dmg`; the memory engine runs from this repo's `docker-compose.yml`
 (nothing here is compiled — it uses the public `cognee/cognee` image).
 
-- **Download the app:** `Quill.dmg`
-  > _📦 Download link (Releases) goes here — added at release._
+- **Download the app:** **[`Quill.dmg`](https://github.com/BigAchiever/Quill-2.0/raw/main/dist/Quill.dmg)** — Apple Silicon build (~5 MB)
 - **Get this repo** (for the sidecar config + compose file — it's ~2 MB, no build needed):
   ```bash
   git clone https://github.com/BigAchiever/Quill-2.0.git
@@ -84,8 +89,9 @@ Edit that file and uncomment the block matching step 2 (use the **same** provide
 ## 5. Install & open the app
 
 1. Open **`Quill.dmg`** and drag **Quill** to **Applications**.
-2. It's an **unsigned** build (hackathon), so the first launch is blocked by Gatekeeper.
-   **Right-click the app → Open → Open** to allow it — only needed once.
+2. It's an **unsigned** build, so the first launch is blocked by Gatekeeper. **Right-click the
+   app → Open → Open** to allow it. If that's greyed out on newer macOS, run
+   `xattr -dr com.apple.quarantine /Applications/quill.app` and reopen. (Only needed once.)
 
 ## 6. Grant Accessibility
 

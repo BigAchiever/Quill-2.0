@@ -222,7 +222,7 @@ Prefer to run the packaged app (no Rust/pnpm toolchain)? Follow
 ~10 minutes, with a 2-minute demo and a guide to what makes this a Cognee project.
 
 - **[`SETUP-JUDGES.md`](SETUP-JUDGES.md)** — step-by-step setup for the packaged app
-- **`Quill.dmg`** — drag-to-install app bundle · _📦 download link added at release_
+- **[Download `Quill.dmg`](https://github.com/BigAchiever/Quill-2.0/raw/main/dist/Quill.dmg)** — drag-to-install app bundle (**Apple Silicon**; Intel Macs build from source)
 
 ---
 
