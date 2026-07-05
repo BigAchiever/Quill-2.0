@@ -1,0 +1,14 @@
+# Quill's cognee sidecar — the self-hosted "memory engine".
+# Quick start: copy cognee-sidecar/.env.example → cognee-sidecar/.env, fill in ONE LLM choice
+# (local Ollama or your own API key — see SETUP.md), then:  docker compose up -d
+services:
+  quill-cognee:
+    image: cognee/cognee:main            # public image — nothing custom to build/publish
+    container_name: quill-cognee
+    env_file:
+      - ./cognee-sidecar/.env            # LLM + embeddings config (your Ollama or API key)
+    ports:
+      - "127.0.0.1:8765:8000"            # host 8765 (8000 is often taken, e.g. ComfyUI) -> container 8000
+    volumes:
+      - ./cognee-sidecar/data:/data      # persistent knowledge graph
+    restart: unless-stopped

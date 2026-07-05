@@ -1,0 +1,49 @@
+# ── Secrets ───────────────────────────────────────────────────────────────
+# Never commit real credentials. Only the *.example templates are tracked.
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# ── Cognee sidecar: local memory data (raw captures + graph) ────────────────
+cognee-sidecar/data/
+cognee-sidecar/backup-graph-*/
+cognee-sidecar/*.log
+
+# ── Databases ───────────────────────────────────────────────────────────────
+*.db
+*.db-wal
+*.db-shm
+*.sqlite
+*.sqlite3
+
+# ── Python ──────────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# ── Node / SvelteKit ────────────────────────────────────────────────────────
+node_modules/
+/quill/build/
+/quill/.svelte-kit/
+/quill/package/
+vite.config.js.timestamp-*
+vite.config.ts.timestamp-*
+
+# ── Rust / Tauri ────────────────────────────────────────────────────────────
+/quill/src-tauri/target/
+/quill/src-tauri/gen/schemas/
+
+# ── Build outputs ───────────────────────────────────────────────────────────
+*.app/
+*.dmg
+
+# ── OS / editor ─────────────────────────────────────────────────────────────
+.DS_Store
+*.swp
+.idea/
+
+# ── Logs ────────────────────────────────────────────────────────────────────
+*.log
