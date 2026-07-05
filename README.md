@@ -217,12 +217,12 @@ walkthrough and troubleshooting.
 
 ## 🧑‍⚖️ For judges / evaluators
 
-A packaged, ready-to-run build (no Rust/pnpm toolchain required) is provided separately:
+Prefer to run the packaged app (no Rust/pnpm toolchain)? Follow
+**[`SETUP-JUDGES.md`](SETUP-JUDGES.md)** — it gets you from install to the `⌥` hero moment in
+~10 minutes, with a 2-minute demo and a guide to what makes this a Cognee project.
 
-- **`Quill.dmg`** — drag-to-install app bundle
-- **`SETUP-JUDGES.md`** — step-by-step setup for the packaged app
-
-> _📦 Link to the packaged build + judges' guide goes here._ **(stub — added at release)**
+- **[`SETUP-JUDGES.md`](SETUP-JUDGES.md)** — step-by-step setup for the packaged app
+- **`Quill.dmg`** — drag-to-install app bundle · _📦 download link added at release_
 
 ---
 
