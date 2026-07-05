@@ -32,7 +32,7 @@ source, see [`SETUP.md`](SETUP.md) instead.
 The app installs from a `.dmg`; the memory engine runs from this repo's `docker-compose.yml`
 (nothing here is compiled — it uses the public `cognee/cognee` image).
 
-- **Download the app:** **[`Quill.dmg`](https://github.com/BigAchiever/Quill-2.0/raw/main/dist/Quill.dmg)** — Apple Silicon build (~5 MB)
+- **Download the app:** **[`Quill.dmg`](https://github.com/BigAchiever/Quill-2.0/releases/download/v0.1.0/Quill.dmg)** — Apple Silicon build (~5 MB)
 - **Get this repo** (for the sidecar config + compose file — it's ~2 MB, no build needed):
   ```bash
   git clone https://github.com/BigAchiever/Quill-2.0.git

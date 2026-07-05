@@ -48,5 +48,3 @@ vite.config.ts.timestamp-*
 # ── Logs ────────────────────────────────────────────────────────────────────
 *.log
 
-# distributable app build (intentionally tracked)
-!dist/Quill.dmg
