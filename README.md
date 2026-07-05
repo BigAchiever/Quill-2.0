@@ -150,8 +150,8 @@ into a graph) → `recall` grounds the LLM → the draft is injected back into t
 ### 1. Clone
 
 ```bash
-git clone https://github.com/BigAchiever/Quill.git
-cd Quill
+git clone https://github.com/BigAchiever/Quill-2.0.git
+cd Quill-2.0
 ```
 
 ### 2. Configure the two `.env` files

@@ -30,8 +30,8 @@ The app installs from a `.dmg`; the memory engine runs from this repo's `docker-
   > _📦 Download link (Releases) goes here — added at release._
 - **Get this repo** (for the sidecar config + compose file — it's ~2 MB, no build needed):
   ```bash
-  git clone https://github.com/BigAchiever/Quill.git
-  cd Quill
+  git clone https://github.com/BigAchiever/Quill-2.0.git
+  cd Quill-2.0
   ```
   _(Or download the repo ZIP from GitHub and `cd` into it.)_
 
