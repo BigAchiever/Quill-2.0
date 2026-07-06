@@ -15,7 +15,7 @@ leaves your machine unless you point it at a cloud model.
      DEMO MEDIA — added after recording
      ───────────────────────────────────────────────────────────────────────── -->
 
-**▶️ Demo video:** _coming soon — link goes here_
+**▶️ Demo video:** [**Quill**](https://youtu.be/pJzLcevUBYY)
 
 <!--
 | Rewrite in your voice | Cross-app memory recall | The constellation |
